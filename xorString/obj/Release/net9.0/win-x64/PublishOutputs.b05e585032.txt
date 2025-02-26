@@ -1,0 +1,2 @@
+/home/ross/RiderProjects/testApp/testApp/bin/Release/net9.0/win-x64/publish/testApp.pdb
+/home/ross/RiderProjects/testApp/testApp/bin/Release/net9.0/win-x64/publish/testApp.exe

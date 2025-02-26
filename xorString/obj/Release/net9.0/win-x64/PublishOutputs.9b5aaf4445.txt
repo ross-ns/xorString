@@ -1,0 +1,2 @@
+/mnt/sonic/data/programming/projects/rider/testApp/testApp/bin/Release/net9.0/win-x64/publish/xorString.pdb
+/mnt/sonic/data/programming/projects/rider/testApp/testApp/bin/Release/net9.0/win-x64/publish/xorString.exe

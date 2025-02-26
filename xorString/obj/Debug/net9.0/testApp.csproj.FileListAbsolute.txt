@@ -1,0 +1,14 @@
+/home/ross/RiderProjects/testApp/testApp/bin/Debug/net9.0/testApp
+/home/ross/RiderProjects/testApp/testApp/bin/Debug/net9.0/testApp.deps.json
+/home/ross/RiderProjects/testApp/testApp/bin/Debug/net9.0/testApp.runtimeconfig.json
+/home/ross/RiderProjects/testApp/testApp/bin/Debug/net9.0/testApp.dll
+/home/ross/RiderProjects/testApp/testApp/bin/Debug/net9.0/testApp.pdb
+/home/ross/RiderProjects/testApp/testApp/obj/Debug/net9.0/testApp.GeneratedMSBuildEditorConfig.editorconfig
+/home/ross/RiderProjects/testApp/testApp/obj/Debug/net9.0/testApp.AssemblyInfoInputs.cache
+/home/ross/RiderProjects/testApp/testApp/obj/Debug/net9.0/testApp.AssemblyInfo.cs
+/home/ross/RiderProjects/testApp/testApp/obj/Debug/net9.0/testApp.csproj.CoreCompileInputs.cache
+/home/ross/RiderProjects/testApp/testApp/obj/Debug/net9.0/testApp.dll
+/home/ross/RiderProjects/testApp/testApp/obj/Debug/net9.0/refint/testApp.dll
+/home/ross/RiderProjects/testApp/testApp/obj/Debug/net9.0/testApp.pdb
+/home/ross/RiderProjects/testApp/testApp/obj/Debug/net9.0/testApp.genruntimeconfig.cache
+/home/ross/RiderProjects/testApp/testApp/obj/Debug/net9.0/ref/testApp.dll

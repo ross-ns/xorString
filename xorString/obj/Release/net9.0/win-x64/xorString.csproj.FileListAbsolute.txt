@@ -1,0 +1,14 @@
+/mnt/sonic/data/programming/projects/rider/testApp/xorString/bin/Release/net9.0/win-x64/xorString.exe
+/mnt/sonic/data/programming/projects/rider/testApp/xorString/bin/Release/net9.0/win-x64/xorString.deps.json
+/mnt/sonic/data/programming/projects/rider/testApp/xorString/bin/Release/net9.0/win-x64/xorString.runtimeconfig.json
+/mnt/sonic/data/programming/projects/rider/testApp/xorString/bin/Release/net9.0/win-x64/xorString.dll
+/mnt/sonic/data/programming/projects/rider/testApp/xorString/bin/Release/net9.0/win-x64/xorString.pdb
+/mnt/sonic/data/programming/projects/rider/testApp/xorString/obj/Release/net9.0/win-x64/xorString.GeneratedMSBuildEditorConfig.editorconfig
+/mnt/sonic/data/programming/projects/rider/testApp/xorString/obj/Release/net9.0/win-x64/xorString.AssemblyInfoInputs.cache
+/mnt/sonic/data/programming/projects/rider/testApp/xorString/obj/Release/net9.0/win-x64/xorString.AssemblyInfo.cs
+/mnt/sonic/data/programming/projects/rider/testApp/xorString/obj/Release/net9.0/win-x64/xorString.csproj.CoreCompileInputs.cache
+/mnt/sonic/data/programming/projects/rider/testApp/xorString/obj/Release/net9.0/win-x64/xorString.dll
+/mnt/sonic/data/programming/projects/rider/testApp/xorString/obj/Release/net9.0/win-x64/refint/xorString.dll
+/mnt/sonic/data/programming/projects/rider/testApp/xorString/obj/Release/net9.0/win-x64/xorString.pdb
+/mnt/sonic/data/programming/projects/rider/testApp/xorString/obj/Release/net9.0/win-x64/xorString.genruntimeconfig.cache
+/mnt/sonic/data/programming/projects/rider/testApp/xorString/obj/Release/net9.0/win-x64/ref/xorString.dll
