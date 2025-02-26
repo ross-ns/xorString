@@ -26,3 +26,4 @@
 /mnt/sonic/data/programming/projects/rider/testApp/xorString/obj/Debug/net9.0/xorString.pdb
 /mnt/sonic/data/programming/projects/rider/testApp/xorString/obj/Debug/net9.0/xorString.genruntimeconfig.cache
 /mnt/sonic/data/programming/projects/rider/testApp/xorString/obj/Debug/net9.0/ref/xorString.dll
+/mnt/sonic/data/programming/projects/rider/testApp/xorString/obj/Debug/net9.0/xorString.sourcelink.json

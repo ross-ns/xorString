@@ -1,4 +1,6 @@
-﻿namespace xorString
+﻿using System.Text;
+
+namespace xorString
 {
     internal class Program
     {
@@ -40,20 +42,9 @@
                 key.PadLeft(input.Length - key.Length, 'x');
             }
             
-            // Convert input string to byte array
-            var inputByte = new byte[input.Length];
-            for (int i = 0; i < inputByte.Length; i++)
-            {
-                inputByte[i] = Convert.ToByte(input[i]);
-            }
-            
-            // Convert the key to a byte
-            //byte keyByte = (byte)(key);
-            var keyByte = new byte[key.Length];
-            for (int i = 0; i < keyByte.Length; i++)
-            {
-                keyByte[i] = Convert.ToByte(key[i]);
-            }
+            // Convert input strings to byte arrays
+            var inputByte = Encoding.UTF8.GetBytes(input);
+            var keyByte = Encoding.UTF8.GetBytes(key);
             
             // XOR the string with the key
             var encryptedString = new byte[inputByte.Length];
@@ -69,12 +60,8 @@
         static string DecryptString(byte[] encryptedString, string key)
         {
             // Convert the key to a byte array
-            var keyByte = new byte[key.Length];
-            for (int i = 0; i < keyByte.Length; i++)
-            {
-                keyByte[i] = Convert.ToByte(key[i]);
-            }
-            
+            var keyByte = Encoding.UTF8.GetBytes(key);
+
             // XOR the encrypted string with the key
             var decryptedBytes = new byte[encryptedString.Length];
             for (int i = 0; i < encryptedString.Length; i++)
@@ -83,12 +70,8 @@
             }
             
             // Convert the decrypted byte array to a string
-            var decryptedString = "";
-            for (int i = 0; i < decryptedBytes.Length; i++)
-            {
-                decryptedString += (char)decryptedBytes[i];
-            }
-            
+            var decryptedString = Encoding.UTF8.GetString(decryptedBytes);
+
             return decryptedString;
         }
     }
