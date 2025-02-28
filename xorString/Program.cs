@@ -4,6 +4,10 @@ namespace xorString
 {
     internal class Program
     {
+        private static byte[] Input { get; set; }
+        private static byte[] Key { get; set; }
+        private static byte[] EncryptedString { get; set; }
+
         static void Main(string[] args)
         {
             Console.Write("Enter a string: ");
@@ -11,10 +15,10 @@ namespace xorString
             Console.Write("Enter a key: ");
             var key = Console.ReadLine();
             
-            var encryptedString = EncryptString(input, key);
+            EncryptString(input, key);
             
             Console.Write("Encrypted string: ");
-            foreach (var t in encryptedString)
+            foreach (var t in EncryptedString)
             {
                 Console.Write(t);
                 Console.Write(" ");
@@ -22,39 +26,46 @@ namespace xorString
             
             Console.WriteLine();
             
-            var decryptedString = DecryptString(encryptedString, key);
-            Console.Write("Decrypted string: ");
-            foreach (var t in decryptedString)
-            {
-                Console.Write(t);
-            }
+            var decryptedString = DecryptString(EncryptedString, key);
+            Console.Write("Decrypted string: " + decryptedString);
         }
 
-        static byte[] EncryptString(string input, string key)
+        static void PadInputs(string input, string key)
         {
-            // Check for differences in length of input and key
+            Console.Write("Input length: " + input.Length + " key length: " + key.Length);
             if (input.Length < key.Length)
             {
-                input.PadLeft(key.Length - input.Length, 'x');
+                input = input.PadLeft(key.Length - input.Length, 'x');
+                Input = Encoding.UTF8.GetBytes(input);
             }
             else if (input.Length > key.Length)
             {
-                key.PadLeft(input.Length - key.Length, 'x');
+                key = key.PadLeft(input.Length - key.Length + 1, 'x');
+                Key = Encoding.UTF8.GetBytes(key);
             }
-            
-            // Convert input strings to byte arrays
-            var inputByte = Encoding.UTF8.GetBytes(input);
-            var keyByte = Encoding.UTF8.GetBytes(key);
+            else if (input.Length == key.Length)
+            {
+                Input = Encoding.UTF8.GetBytes(input);
+                Key = Encoding.UTF8.GetBytes(key);
+            }
+            else
+            {
+                throw new Exception("Input lengths cannot be determined");
+            }
+        }
+
+        static void EncryptString(string input, string key)
+        {
+            // Pad inputs if required
+            PadInputs(input, key);
             
             // XOR the string with the key
-            var encryptedString = new byte[inputByte.Length];
+            //var encryptedString = new byte[Input.Length];
             
-            for (int i = 0; i < inputByte.Length; i++)
+            for (int i = 0; i < Input.Length; i++)
             {
-                encryptedString[i] = (byte)(inputByte[i] ^ keyByte[i]);
+                EncryptedString[i] = (byte)(Input[i] ^ Key[i]);
             }
-            
-            return encryptedString;
         }
 
         static string DecryptString(byte[] encryptedString, string key)
@@ -70,9 +81,7 @@ namespace xorString
             }
             
             // Convert the decrypted byte array to a string
-            var decryptedString = Encoding.UTF8.GetString(decryptedBytes);
-
-            return decryptedString;
+            return Encoding.UTF8.GetString(decryptedBytes);
         }
     }
 }
